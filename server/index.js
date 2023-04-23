@@ -74,7 +74,7 @@ app.delete("/todos/:id", async (req, res) => {
         [id]);
         res.json("Todo was deleted.");
     } catch (err) {
-        console.log(err.message)
+        console.error(err.message)
     }
 });
 
