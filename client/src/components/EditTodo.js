@@ -47,7 +47,7 @@ const EditTodo = ({ todo }) => {
         <div class='modal-dialog'>
           <div class='modal-content'>
             <div class='modal-header'>
-              <h4 class='modal-title'>Edit Todo</h4>
+              <h4 class='modal-title font-link'>Edit Todo</h4>
               <button
                 type='button'
                 class='close'
@@ -70,7 +70,7 @@ const EditTodo = ({ todo }) => {
             <div class='modal-footer'>
               <button
                 type='button'
-                class='btn btn-outline-info'
+                class='btn btn-outline-info font-link'
                 data-dismiss='modal'
                 onClick={(e) => updateDescription(e)}
               >
@@ -78,7 +78,7 @@ const EditTodo = ({ todo }) => {
               </button>
               <button
                 type='button'
-                class='btn btn-outline-danger'
+                class='btn btn-outline-danger font-link'
                 data-dismiss='modal'
                 onClick={() => setDescription(todo.description)}
               >

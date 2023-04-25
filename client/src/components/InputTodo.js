@@ -21,7 +21,9 @@ const InputTodo = () => {
 
   return (
     <Fragment>
-      <h1 class="h1 text-center mt-3 mb-4 pb-3 text-inverse mt-5">Todo List</h1>
+      <h1 class='h1 text-center mt-3 mb-4 pb-3 text-inverse mt-5 font-link font-weight-bold '>
+        Todo List
+      </h1>
       <form className='d-flex mt-5' onSubmit={onSubmitForm}>
         <input
           type='text'
@@ -29,7 +31,7 @@ const InputTodo = () => {
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
-        <button className='btn btn-outline-success'>Add</button>
+        <button className='btn btn-outline-success font-link'>Add</button>
       </form>
     </Fragment>
   );

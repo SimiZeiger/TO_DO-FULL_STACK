@@ -35,7 +35,7 @@ const ListTodos = () => {
 
   return (
     <Fragment>
-      <table class='table mt-5 text-center'>
+      <table class='table mt-5 text-center font-link'>
         <thead>
           <tr>
             <th>Description</th>
@@ -57,7 +57,7 @@ const ListTodos = () => {
               </td>
               <td>
                 <button
-                  className='btn btn-outline-danger'
+                  className='btn btn-outline-danger font-link'
                   onClick={() => deleteTodo(todo.todo_id)}
                 >
                   Delete
