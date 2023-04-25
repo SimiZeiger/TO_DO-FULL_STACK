@@ -28,7 +28,7 @@ const EditTodo = ({ todo }) => {
     <Fragment>
       <button
         type='button'
-        class='btn btn-warning'
+        class='btn btn-outline-info'
         data-toggle='modal'
         data-target={`#id${todo.todo_id}`}
       >
@@ -70,7 +70,7 @@ const EditTodo = ({ todo }) => {
             <div class='modal-footer'>
               <button
                 type='button'
-                class='btn btn-warning'
+                class='btn btn-outline-info'
                 data-dismiss='modal'
                 onClick={(e) => updateDescription(e)}
               >
@@ -78,7 +78,7 @@ const EditTodo = ({ todo }) => {
               </button>
               <button
                 type='button'
-                class='btn btn-danger'
+                class='btn btn-outline-danger'
                 data-dismiss='modal'
                 onClick={() => setDescription(todo.description)}
               >
